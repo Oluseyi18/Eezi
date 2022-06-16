@@ -6,6 +6,11 @@
 }
 
 body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: #f0f0f0;
     font-family: 'Lexend Deca', sans-serif;
     background: hsl(0, 0%, 95%);
@@ -23,14 +28,13 @@ a {
 }
 
 main {
-    width: 50%;
-    height: 50vh;
+    width: 100%;
+    max-width: 1440px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: row;
+    flex-flow: wrap;
 }
 
 h2 {
@@ -43,37 +47,38 @@ h2 {
 }
 
 p {
-    color: hsl(0, 0%, 95%);
-    margin-top: 18px;
+    color: hsl(0, 0%, 95%, 0.75);
 }
 
 .first-box {
     background-color: hsl(31, 77%, 52%);
-    padding: 2em;
-    width: 50%;
-    height: 400px;
+    padding: 15px;
+    width: 269px;
+    min-height: 430px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 .second-box {
     background-color: hsl(184, 100%, 22%);
-    padding: 2em;
-    width: 50%;
-    height: 400px;
+    padding: 15px;
+    width: 269px;
+    min-height: 430px;
 }
 
 .third-box {
     background-color: hsl(179, 100%, 13%);
-    padding: 2em;
-    width: 50%;
-    height: 400px;
+    padding: 15px;
+    width: 269px;
+    min-height: 430px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+.contain{
+    padding: 10px;
+}
 button {
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     justify-content: center;
     align-items: center;
